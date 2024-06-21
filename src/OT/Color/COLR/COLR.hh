@@ -1610,7 +1610,7 @@ struct ClipBox
   void closurev1 (hb_colrv1_closure_context_t* c) const
   {
     switch (u.format) {
-    case 2: u.format2.closurev1 (c);
+    case 2: u.format2.closurev1 (c); HB_FALLTHROUGH;
     default:return;
     }
   }
